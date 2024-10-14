@@ -57,4 +57,26 @@ fn main() {
     ];
     println!("{:?}", row);
 
+    let s1 = String::from("tic");
+    let s2 = String::from("tac");
+    let s3 = String::from("toe");
+    //let s = s1 + "-" + &s2 + "-" + &s3;
+    let s = format!("{s1}-{s2}-{s3}");
+
+    println!("{s}");
+
+
+    // Can not use index for String
+    //let s1 = String::from("hello");
+    //let u : usize = 0;
+    //let h = s1[u];
+
+    for c in "Зд".chars() {
+        println!("{c}");
+    }
+    for b in "Зд".bytes() {
+        println!("{b}");
+    }
+    
+
 }
